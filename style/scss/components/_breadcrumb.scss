@@ -1,0 +1,62 @@
+@import '../getBootstrap';
+
+
+.breadcrumb_section {
+ z-index: 1;
+ display: flex;
+ align-items: end;
+ position: relative;
+ background: url('../../../images/redd-f-5U.png') no-repeat center;
+ background-size: cover;
+ @media only screen and (min-width: 767px){min-height: 250px;}
+ @media only screen and (max-width: 767px){min-height: 200px;}
+
+ &:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($dark, .5);
+  z-index: -1;
+ }
+
+ .breadcrumb_list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+  li {
+   display: inline-block;
+   color: $light;
+   margin: 0 20px 0 0;
+   position: relative;
+
+
+   * {
+    line-height: 1;
+   }
+
+   &:not(:nth-child(1)) {
+    &:before {
+     content: '\eac9';
+     font-family: 'Material Icons Outlined';
+     position: absolute;
+     left: -18px;
+    }
+   }
+
+   &+li {
+    color: rgba($light,1);
+
+    &+li {
+     color: rgba($light, .8);
+    }
+    &+li {
+     color: rgba($light, .6);
+    }
+   }
+  }
+ }
+}

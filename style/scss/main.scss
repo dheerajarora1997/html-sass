@@ -2,6 +2,25 @@
 
 // Bootstrap basic style 
 @import './getBootstrap';
+@import './getBootstrapComponents';
 
 // website basic components and layouts
- @import './layouts/header','./layouts/footer','./layouts/topbar','./layouts/sidebar';
+@import './layouts/header', './layouts/footer', './layouts/topbar', './layouts/sidebar';
+
+// Components
+@import './components/line-height', './components/action-btn';
+
+
+
+* {
+ padding: 0;
+ margin: 0;
+ font: 400 14px/1.8 Poppins, sans-serif;
+}
+
+.cta_wrapper {
+ position: absolute;
+ bottom: -60px;
+ left: 0;
+ width: 100%;
+}

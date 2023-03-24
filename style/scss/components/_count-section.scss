@@ -1,0 +1,36 @@
+@import '../getBootstrap';
+
+.count {
+ &_group {
+  position: relative;
+  line-height: 1;
+  background: $warning;
+
+  &:after {
+   content: '';
+   right: 0;
+   bottom: -30px;
+   position: absolute;
+   border: 15px solid transparent;
+   border-color: $warning $warning transparent transparent;
+
+   @media only screen and (max-width: 991px) {
+    width: 55%;
+   }
+
+   @media only screen and (min-width: 991px) {
+    width: 35%;
+   }
+  }
+ }
+
+ &_item {
+  min-width: 45px;
+  &:after {
+   content: 'asd';
+   content: attr(data-content);
+   font-size: 80%;
+   color: darken($white, 10 )
+  }
+ }
+}

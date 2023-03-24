@@ -1,0 +1,8 @@
+@import '../getBootstrap';
+
+.gradient_section {
+ min-height: 100px;
+ background-color: transparent;
+ @media only screen and (min-width: 767px){background-image: linear-gradient(90deg, $dark 50%, $info 0%);}
+ @media only screen and (max-width: 767px){background-image: linear-gradient(180deg, $dark 50%, $info 0%);}
+}

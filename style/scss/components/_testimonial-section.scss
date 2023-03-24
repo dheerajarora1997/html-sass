@@ -1,0 +1,41 @@
+@import '../getBootstrap';
+
+.testimonial_section {
+ position: relative;
+ z-index: 1;
+ line-height: 1;
+ min-height: 500px;
+ background: url('../../../images/92124551.jpeg') no-repeat center $dark;
+ background-size: cover;
+ background-attachment: fixed;
+ max-width: 1320px;
+ margin: 0 auto;
+
+ &:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($dark, .7);
+  z-index: -1;
+ }
+
+ &:after {
+  content: '';
+  left: 0;
+  top: -31px;
+  position: absolute;
+  border: 30px solid transparent;
+  border-color: transparent transparent $dark $dark;
+
+  @media only screen and (max-width: 991px) {
+   width: 55%;
+  }
+
+  @media only screen and (min-width: 991px) {
+   width: 35%;
+  }
+ }
+}
