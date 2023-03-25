@@ -1,0 +1,63 @@
+.animation- {
+ &bounce {
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 1s;
+  &-down{
+   position: relative;
+  animation-name: bounce-down;
+  animation-duration: 1s;
+
+  }
+ }
+
+ &infinite {
+  animation-iteration-count: infinite;
+ }
+}
+
+
+@keyframes bounce {
+ 0% {
+  top: 0;
+  transform: rotate3d(1, 1, 1, 0);
+ }
+ 25% {
+  top: -5px;
+  transform: rotate3d(1, 1, 1, -5deg);
+ }
+ 50% {
+  top: 0;
+  transform: rotate3d(1, 1, 1, 0);
+ }
+ 75% {
+  top: 5px;
+  transform: rotate3d(1, 1, 1, 5deg);
+ }
+ 100% {
+  top: 0;
+  transform: rotate3d(1, 1, 1, 0);
+ }
+}
+@keyframes bounce-down {
+ 0% {
+  top: 0;
+  transform: rotate3d(1, 1, 1, 0);  
+ }
+ 25% {
+  top: 5px;
+  transform: rotate3d(1, 1, 1, 5deg);  
+ }
+ 50% {
+  top: 0;
+  transform: rotate3d(1, 1, 1, 0);
+ }
+ 75% {
+  top: -5px;
+  transform: rotate3d(1, 1, 1, -5deg);
+ }
+ 100% {
+  top: 0;
+  transform: rotate3d(1, 1, 1, 0);
+ }
+}
