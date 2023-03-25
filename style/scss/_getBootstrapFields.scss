@@ -1,0 +1,32 @@
+@import '../../node_modules/bootstrap/scss/forms';
+
+.form-group {
+ position: relative;
+
+ label {
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  left: 8px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+ }
+
+ input:not(:placeholder-shown)+label,
+ select:not(:placeholder-shown)+label,
+ textarea:not(:placeholder-shown)+label {
+  top: 0;
+  font-size: 85%;
+  opacity: .7;
+ }
+
+ input:disabled label,
+ select:disabled label,
+ textarea:disabled label {
+  opacity: 0.5;
+ }
+
+}

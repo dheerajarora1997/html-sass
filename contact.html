@@ -8,6 +8,7 @@
  <title>Contact </title>
  <link rel="stylesheet" href="./style/css/main.css">
  <link rel="stylesheet" href="./style/css/pages/default.css">
+ <link rel="stylesheet" href="./style/css/pages/form-page.css">
 </head>
 
 <body>
@@ -36,7 +37,27 @@
       <a href="mailto:hello@webxpedia.com" class="text-light text-decoration-none fa-lg d-inline-block mb-3">hello@webxpedia.com</a>
      </div>
      <div class="col-sm-12 col-md-6">
-      <form action="" style="min-height: 440px;"></form>
+      <form action="" class="bg-light bg-opacity-75 px-4 pt-5 rounded ms-4" style="min-height: 440px;">
+        <div class="form-group mb-4">
+          <input type="text" class="form-control py-3 border-0 bg-light rounded-sm" placeholder="Name">
+          <label>Name</label>
+        </div>
+        <div class="form-group mb-4">
+          <input type="text" class="form-control py-3 border-0 bg-light rounded-sm" placeholder="Email">
+          <label>Email</label>
+        </div>
+        <div class="form-group mb-4">
+          <input type="text" class="form-control py-3 border-0 bg-light rounded-sm" placeholder="Phone">
+          <label>Phone</label>
+        </div>
+        <div class="form-group mb-4">
+          <textarea name="" id="" class="form-control py-3 border-0 bg-light rounded-sm" placeholder="Messages"></textarea>
+          <label>Message</label>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary rounded btn_action">Send Quote</button>
+        </div>
+      </form>
      </div>
     </div>
    </div>

@@ -1,0 +1,25 @@
+@import '../getBootstrap';
+
+header.site-header {
+ position: absolute;
+ z-index: 5;
+
+ li a {
+  padding: 10px;
+  position: s;
+
+  ul {
+   background: $dark;
+   flex-direction: column;
+  }
+ }
+
+ &.header-sticky {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.125);
+  transition: all ease 0.3s;
+  backdrop-filter: saturate(250%) blur(11px);
+  background: rgba(255, 255, 255, 0.5);
+  position: sticky;
+  top: 0;
+ }
+}
