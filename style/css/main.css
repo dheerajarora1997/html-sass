@@ -9,6 +9,9 @@
 .list-style-none {
   list-style-type: none; }
 
+.hover-shadow:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.09); }
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 3px; }
