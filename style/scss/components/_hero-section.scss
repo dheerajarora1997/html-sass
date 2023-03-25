@@ -27,12 +27,8 @@
    left: 0;
    width: 100%;
    height: 100%;
-   background: rgba($dark, .5);
+   background: rgba($dark, .7);
    z-index: -1;
   }
- }
-
- &_heading {
-  font-weight: 600;
  }
 }
